@@ -1,7 +1,7 @@
-.my-drawer {
+.my-drawer .NavBar{
+  width: 100%;
   position: fixed;
   top: 0;
-  z-index: 2;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -74,10 +74,12 @@
   line-height: 50px;
   position: fixed;
   bottom: 0;
+  left: 0;
   display: flex;
 }
 .Drawer .DrawerBottom div{
-  width: 45%;
+  padding: 0 35px;
+  width: 50%;
 }
 .Drawer .DrawerBottom span{
   margin-left: 5px;
@@ -87,4 +89,7 @@
 .Drawer .DrawerBottom img{
   width: 15px;
   height: 15px;
+}
+.am-drawer-draghandle{
+  opacity: 0;
 }

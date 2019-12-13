@@ -1,7 +1,9 @@
 
 .headBottom{
-  padding: 7px 10px;
+  width: 100%;
   background-color: #31c37c;
+  position: fixed;
+  top: 45px;
 }
 .headBottom .search{
   height: 30px;
@@ -11,6 +13,7 @@
   color: #ffffff;
   background-color: #cacace;
   position: relative;
+  margin: 7px 10px;
 }
 .headBottom .search img{
   width: 18px;
@@ -36,6 +39,8 @@
 .isHeadMasking{
   z-index: 0;
   transform: translateY(0);
+  height: 100%;
+    background-color: #fff;
 }
 .headMasking .headMaskingTop{
   height: 50px;
@@ -50,7 +55,7 @@
 }
 .headMasking .headMaskingTop span{
   font-size: 20px;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 .headMasking .headMaskingTop .headMaskingTopInput{
   display: flex;
