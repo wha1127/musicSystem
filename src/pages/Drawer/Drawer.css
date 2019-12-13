@@ -1,6 +1,7 @@
 .my-drawer {
   position: fixed;
   top: 0;
+  z-index: 2;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
