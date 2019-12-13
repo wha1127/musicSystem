@@ -20,21 +20,9 @@ export default class DrawersBody extends React.Component {
         <div className="DrawersBodyBottom">
           <h4>搜索历史</h4>
           <ul>
-            <li>
-              <img src="./image/icon-record-recent.png" alt="" />
-              <p>林俊杰</p>
-              <img src="./image/icon-record-close.png" alt="" />
-            </li>
-            <li>
-              <img src="./image/icon-record-recent.png" alt="" />
-              <p>周杰伦</p>
-              <img src="./image/icon-record-close.png" alt="" />
-            </li>
-            <li>
-              <img src="./image/icon-record-recent.png" alt="" />
-              <p>张靓颖</p>
-              <img src="./image/icon-record-close.png" alt="" />
-            </li>
+            <li>林俊杰</li>
+            <li>周杰伦</li>
+            <li>张靓颖</li>
           </ul>
         </div>
       </div>

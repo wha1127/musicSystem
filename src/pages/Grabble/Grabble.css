@@ -34,10 +34,8 @@
   transition:all .5s ;
 }
 .isHeadMasking{
-  z-index: 2;
+  z-index: 0;
   transform: translateY(0);
-  background-color: #ffffff;
-  height: 100%;
 }
 .headMasking .headMaskingTop{
   height: 50px;
