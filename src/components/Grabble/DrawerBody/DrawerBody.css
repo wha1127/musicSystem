@@ -1,0 +1,29 @@
+.DrawersBodyTop{
+  padding: 15px;
+  background: #fff;
+  color: black;
+}
+.DrawersBodyTop h4{
+  color: #8a8a8a;
+  padding: 15px 0;
+  font-weight: 400;
+  font-size: 15px;
+}
+.DrawersBodyTop ul li{
+  display: inline-block;
+  border-radius: 40px;
+  border: 1px solid #515151;
+  color: #373737;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 5px;
+}
+.DrawersBodyBottom h4{
+  position: relative;
+  color: #8a8a8a;
+  padding: 15px 0 15px 15px;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #fff;
+}
