@@ -1,0 +1,65 @@
+
+.headBottom{
+  padding: 7px 10px;
+  background-color: #31c37c;
+}
+.headBottom .search{
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #cacace;
+  position: relative;
+}
+.headBottom .search img{
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 3px;
+  margin-right:4px ;
+}
+.headBottom .search span{
+  font-size: 17px;
+  font-weight: 300;
+}
+.headMasking{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  transform: translateY(100%);
+  transition:all .5s ;
+}
+.isHeadMasking{
+  z-index: 0;
+  transform: translateY(0);
+}
+.headMasking .headMaskingTop{
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  background-color: #31c37c;
+  position: relative;
+  display: flex;
+}
+.headMasking .headMaskingTop svg{
+  height: 100%;
+}
+.headMasking .headMaskingTop span{
+  font-size: 20px;
+  margin-left: 5px;
+}
+.headMasking .headMaskingTop .headMaskingTopInput{
+  display: flex;
+  align-items: center;
+}
+.am-list-item.am-input-item{
+  width: 250px;
+  height: 40px;
+  min-height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color:#39da8c ;
+}
