@@ -27,3 +27,27 @@
   font-size: 15px;
   background-color: #fff;
 }
+.DrawersBodyBottom ul li{
+  position: relative;
+  background: #fff;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 60px;
+  color: #000;
+}
+.DrawersBodyBottom ul li img:nth-child(1){
+  position: absolute;
+  left: 15px;
+  top: 7px;
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+}
+.DrawersBodyBottom ul li img:nth-child(3){
+  position: absolute;
+    right: 15px;
+    top: 12px;
+    background-size: cover;
+    width: 21px;
+    height: 21px;
+}
