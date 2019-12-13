@@ -93,7 +93,7 @@ export default class Drawers extends React.Component {
         className="my-drawer"
         style={{ minHeight: document.documentElement.clientHeight }}
         enableDragHandle
-        contentStyle={{ color: '#31c37c', textAlign: 'center' }}
+        contentStyle={{ color: '#31c37c' }}
         sidebar={sidebar}
         open={this.state.open}
         onOpenChange={this.onOpenChange}

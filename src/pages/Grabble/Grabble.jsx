@@ -2,6 +2,7 @@
 import React from 'react'
 import './Grabble.css'
 import { InputItem, Icon } from 'antd-mobile';
+import DrawerBody from "./DrawerBody/DrawerBody.jsx"
 export default class Grabble extends React.Component {
   state = {
     isHeadMasking: true
@@ -46,6 +47,7 @@ export default class Grabble extends React.Component {
               <span>搜索</span>
             </div>
           </div>
+          <DrawerBody />
         </div>
       </div>
     )
