@@ -30,12 +30,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-=======
-  },
-  "devDependencies": {
-    "customize-cra": "^0.9.1",
-    "react-app-rewired": "^2.1.5"
->>>>>>> parent of 280cbaf... 首页
   }
 }
