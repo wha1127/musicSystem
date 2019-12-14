@@ -1,0 +1,102 @@
+.qqmusic-home-body{
+ margin-top:80px ; 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.qqmusic-discovery-list {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.qqmusic-discovery-item {
+  display: flex;
+  padding: 15px 0 0 15px;
+}
+.qqmusic-discovery-item-left {
+  flex: 1;
+  padding-right: 10px;
+  overflow: hidden;
+}
+.qqmusic-discovery-item-left .text{
+  margin-top: 15px;
+    font-size: 19px;
+}
+.qqmusic-discovery-item-left .music {
+  margin-top: 10px;
+  font-size: 13px;
+  white-space:nowrapp;
+  text-overflow:ellipsis;
+}
+.qqmusic-discovery-item-left .music-image {
+  width:21px;
+  height:21px;
+  margin-right:5px;
+  vertical-align: -5px;
+}
+.qqmusic-discovery-item-left .extra {
+  font-size: 13px;
+  margin-top:10px;
+  color: #6f6f6f;
+}
+.qqusic-discovery-item-right {
+flex: 0 0 110px;
+height: 110px;
+overflow: hidden;
+}
+.qqusic-discovery-item-right .image {
+  width: 110px;
+}
+.qqmusic-discovery-carousel {
+  margin-top: 15px;
+  width: 100%;
+}
+.qqmusic-discovery-carousel .top .tag{
+  font-size: 11px;
+  background: #000;
+  color: #fff;
+  padding: 1px 2px;
+  margin-left: 15px;
+}
+.qqmusic-discovery-carousel .bottom {
+  margin-top: 4px;
+  height: 99px;
+  overflow-y: hidden;
+}
+.qqmusic-discovery-carousel .bottom .list{
+  padding-left: 12px;
+  white-space: nowrap;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.qqmusic-discovery-carousel .bottom .list .item {
+  display: inline-block;
+  position: relative;
+  margin-left: 3px;
+}
+.qqmusic-discovery-carousel .bottom .list .item .image{
+  widows: 168px;
+  height: 100px;
+}
+.qqmusic-discovery-carousel .bottom .list .item .mask {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.qqmusic-discovery-carousel .bottom .list .item .mask .title{
+  margin-top: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+}
+.qqmusic-discovery-carousel .bottom .list .item .mask  .text{
+  margin-top: 5px;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+}

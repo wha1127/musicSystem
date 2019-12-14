@@ -3,6 +3,7 @@ import React from 'react'
 import './Grabble.css'
 import { InputItem, Icon } from 'antd-mobile';
 import DrawerBody from "./DrawerBody/DrawerBody.jsx"
+import Discovery from "../Discovery/index.jsx"
 export default class Grabble extends React.Component {
   state = {
     isHeadMasking: true
@@ -39,6 +40,7 @@ export default class Grabble extends React.Component {
         所有组件在这里引入
         
         */}
+        <Discovery />
         <div id="headMasking" className="headMasking">
           <div>
             <div className="headMaskingTop">
