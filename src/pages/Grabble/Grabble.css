@@ -4,6 +4,7 @@
   background-color: #31c37c;
   position: fixed;
   top: 45px;
+  z-index: 2;
 }
 .headBottom .search{
   height: 30px;
@@ -32,12 +33,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 3;
+  z-index: 2;
   transform: translateY(100%);
   transition:all .5s ;
 }
 .isHeadMasking{
-  z-index: 0;
+  z-index: 3;
   transform: translateY(0);
   height: 100%;
     background-color: #fff;

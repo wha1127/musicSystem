@@ -3,9 +3,13 @@ import React from 'react'
 import './Grabble.css'
 import { InputItem, Icon } from 'antd-mobile';
 import DrawerBody from "./DrawerBody/DrawerBody.jsx"
+import { Switch, Route } from "react-router-dom"
+import Discovery from "../Discovery/index.jsx"
+import MusicHall from "../MusicHall/MusicHall.jsx"
 export default class Grabble extends React.Component {
   state = {
-    isHeadMasking: true
+    isHeadMasking: true,
+    inputValue: ""
   }
   goMasking = () => {
     const headMasking = document.getElementById("headMasking")
@@ -25,7 +29,13 @@ export default class Grabble extends React.Component {
       headMasking.className = "headMasking"
     }
   }
+  saveValue = (inputValue) => {
+    this.setState({
+      inputValue
+    })
+  }
   render () {
+    const { inputValue } = this.state
     return (
       <div>
         <div className="headBottom" onClick={this.goMasking}>
@@ -39,6 +49,11 @@ export default class Grabble extends React.Component {
         所有组件在这里引入
         
         */}
+        <Switch>
+          {/* <Route path="" component={}></Route> */}
+          <Route path="/musicHall" component={MusicHall}></Route>
+          <Route path="/discovery" component={Discovery}></Route>
+        </Switch>
         <div id="headMasking" className="headMasking">
           <div>
             <div className="headMaskingTop">
@@ -47,12 +62,13 @@ export default class Grabble extends React.Component {
                 <InputItem
                   clear
                   placeholder="支持音乐搜索"
+                  value={inputValue}
                 ></InputItem>
               </div>
               <span>搜索</span>
             </div>
           </div>
-          <DrawerBody />
+          <DrawerBody saveValue={this.saveValue} />
         </div>
       </div>
     )

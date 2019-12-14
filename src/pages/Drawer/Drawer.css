@@ -4,6 +4,7 @@
   top: 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  z-index: 2;
 }
 .my-drawer .am-drawer-sidebar {
   background-color: #fff;

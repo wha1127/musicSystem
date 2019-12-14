@@ -1,13 +1,17 @@
 // 引入React
 import React from 'react'
 import './App.css'
-import Drawers from "./pages/Drawer/Drawer.jsx"
-
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"
+import routes from "./routers/routes.js"
+import Drawer from "./pages/Drawer/Drawer.jsx"
 export default class App extends React.Component {
 
   render () {
     return (
-      <Drawers />
+      <Router>
+        <Drawer />
+        <Redirect to="/musicHall"></Redirect>
+      </Router>
     )
   }
 }
