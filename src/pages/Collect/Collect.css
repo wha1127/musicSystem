@@ -23,12 +23,19 @@
 }
 
 .collectItem .maskings-right {
+
   flex: 1;
   height: 60px;
   line-height: 60px;
   color: rgba(0, 0, 0, .3);
   font-size: 14px;
   border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.masking-right .masking-right-number {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
 }
 
 /* 我的新建样式 */
@@ -83,6 +90,7 @@
 }
 
 .newSongItem .masking-left {
+
   width: 60px;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -98,6 +106,7 @@
 }
 
 .newSongItem .masking-right {
+  position: relative;
   flex: 1;
   height: 60px;
   line-height: 60px;
