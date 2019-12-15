@@ -1,13 +1,44 @@
-.content
-  display flex
-  justify-content center
-  flex-wrap wrap
-  .content-top
+$rem = 1080 / 16rem
+.container
+  height: 100%
+  display: flex
+  flex-direction: column
+  .content
     display flex
-    justify-content space-around
-    padding 5px 0 20px
-    width 100%
-    .content-left
+    justify-content center
+    flex-wrap wrap
+    .content-top
+      display flex
+      justify-content space-around
+      padding 5px 0 10px
+      width 100%
+      .content-left
+        display inline-block
+        border 1px solid #8a8a8a
+        text-align center
+        width 80px
+        height 25px
+        border-radius 15px
+        text-align center
+        margin-top 5px
+        .listenTime
+          display inline-block
+          vertical-align -5px
+          width 24px
+          height 24px
+          background-size 24px 24px
+          background-image url('../../assets/icon-user-audition.png')
+        span
+          padding-left 4px
+          font-size 14px
+          color #cdcdcd
+    .avatar
+      width 50px
+      height 50px
+      border-radius 50%
+      vertical-align middle
+      margin 0 15px
+    .content-right
       display inline-block
       border 1px solid #8a8a8a
       text-align center
@@ -16,109 +47,140 @@
       border-radius 15px
       text-align center
       margin-top 5px
-      .listenTime
+      .vip
         display inline-block
         vertical-align -5px
         width 24px
         height 24px
         background-size 24px 24px
-        background-image url('../../assets/icon-user-audition.png')
-      span
-        padding-left 4px
-        font-size 14px
-        color #cdcdcd
-  .avatar
-    width 50px
-    height 50px
-    border-radius 50%
-    vertical-align middle
-    margin 0 15px
-  .content-right
-    display inline-block
-    border 1px solid #8a8a8a
-    text-align center
-    width 80px
-    height 25px
-    border-radius 15px
-    text-align center
-    margin-top 5px
-    .vip
-      display inline-block
-      vertical-align -5px
-      width 24px
-      height 24px
-      background-size 24px 24px
-      background-image url('../../assets/icon-user-dredge.png')
-      span
-        padding-left 4px
-        font-size 14px
-        color #cdcdcd
-  .split
-    width 100%
-    text-align center
-    position relative
-    height 50px
-    .vip
-      height 19px
-      width 19px
-      position absolute
-      left 48%
-      bottom 0
-    span
+        background-image url('../../assets/icon-user-dredge.png')
+        span
+          padding-left 4px
+          font-size 14px
+          color #cdcdcd
+    .split
+      width 100%
+      text-align center
       position relative
-      font-size 20px
-      font-weight 500
-      &:before
+      height 40px
+      .vip
+        height 19px
+        width 19px
         position absolute
-        left -48px
-        top 16px
-        content ''
-        height 1px
-        width 40px
-        border-top 1px solid #2c2c2c
-      &:after
-        position absolute
-        right -48px
-        top 16px
-        content ''
-        height 1px
-        width 40px
-        border-top 1px solid #2c2c2c
-  .content-bottom
-    width 100%
-    .list
-      .am-flexbox
-        display flex
-        .itemList
+        left 48%
+        bottom 0
+      span
+        position relative
+        font-size 20px
+        font-weight 500
+        &:before
+          position absolute
+          left -48px
+          top 16px
+          content ''
+          height 1px
+          width 40px
+          border-top 1px solid #2c2c2c
+        &:after
+          position absolute
+          right -48px
+          top 16px
+          content ''
+          height 1px
+          width 40px
+          border-top 1px solid #2c2c2c
+    .content-bottom
+      width 100%
+      .list
+        .am-flexbox
           display flex
-          flex-direction column
-          align-items center
-          img
-            width 35px
-            height 35px
-          span
-            text-align center
-            font-size 15px
-            padding-top 5px
-.radio
-  margin-top 10px
-  margin-left 10px
-  .row
-    display flex
-    height 55px
-    margin 5px
-    .left
-      img
-        width 55px
-        height 55px
-    .right
-      line-height 8px
-      .station-title
-        font-size 16px
-        font-weight 400
-      .station-text
-        font-size 13px
-        color #cacaca
-        font-weight 300
-  .splitLine
-    border: 1px solid #000
+          .itemList
+            display flex
+            flex-direction column
+            align-items center
+            margin-top 5px
+            img
+              width 35px
+              height 35px
+            span
+              text-align center
+              font-size 15px
+              padding-top 5px
+  .radio
+    margin-top 10px
+    margin-left 10px
+    .row
+      display flex
+      height 55px
+      margin 5px
+      .left
+        img
+          width 55px
+          height 55px
+      .right
+        .station-title
+          font-size 16px
+          font-weight 400
+          padding: 5px 0
+        .station-text
+          font-size 13px
+          color #cacaca
+          font-weight 300
+          padding: 5px 0
+    .splitLine
+      border 1px solid #000
+  .menus
+    width 100%
+    .menusTop
+      text-align center
+      margin-top 5/$rem
+      background #fff
+      line-height 40px
+      color #8a8a8a
+      .split
+        margin 0 10px
+      .add
+        position absolute
+        right 40px
+        top 11px
+        display inline-block
+        height 20px
+        width 20px
+        background url('../../assets/icon-songmenu-add.png')
+        background-size 20px 20px
+      .detail
+        position absolute
+        right 10px
+        top 12px
+        display inline-block
+        height 20px
+        width 20px
+        background url('../../assets/icon-songmenu.png')
+        background-size 20px 20px
+    .menusBottom
+      display flex
+      margin-left 10px
+      position relative
+      &:after
+        width 276px
+        position absolute
+        height 1px
+        content ''
+        background-color rgb(231,231,231)
+        bottom 0
+        left: 72px
+      .addSongMenu
+        background-color #ccc
+        width 60px
+        height 60px
+        line-height 60px
+        text-align center
+        img
+          height 20px
+          width 20px
+      span
+        font-size 20px
+        text-align center
+        color rgb(211, 211, 211)
+        line-height 60px
+        margin-left 10px

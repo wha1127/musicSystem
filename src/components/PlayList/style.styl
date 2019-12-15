@@ -1,0 +1,76 @@
+.playListContainer
+  background-color rgba(0, 0, 0, 0.4)
+  position relative
+  top 0
+  right 0
+  bottom 0
+  left 0
+  z-index -1
+  transition all 0.4s linear
+  opacity 0
+  &.show
+    position fixed
+    top 0
+    right 0
+    bottom 0
+    left 0
+    z-index 1
+    opacity 1
+  .musicList
+    display flex
+    flex-direction column
+    position fixed
+    left 0
+    bottom 0
+    width 100%
+    height 60%
+    z-index 3
+    background-color rgba(31, 37, 47, 0.9)
+    transform translateY(100%)
+    transition all 0.4s linear
+    &.show
+      transform translateY(0)
+    .listTop
+      position relative
+      .title
+        font-size 17px
+        color #fff
+        font-weight 300
+        line-height 50px
+        padding-left 15px
+      .bin
+        position absolute
+        top 15px
+        right 25px
+        width 20px
+  .listContent
+    .listItem
+      position relative
+      height 40px
+      line-height 40px
+      padding 0 15px
+      font-size 15px
+      color #fff
+      &.isPlaying
+        color #02a774
+      .playing
+        position absolute
+        top 8px
+        left 60%
+        width 20px
+      .close
+        position absolute
+        top 15px
+        right 25px
+        width 20px
+  .bottom
+    color #fff
+    font-size 16px
+    text-align center
+    flex 0 0 50px
+    line-height 50px
+    position fixed
+    bottom 0
+    left 50%
+    z-index 3
+    transform translateX(-50%)

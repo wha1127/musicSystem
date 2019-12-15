@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import Header from '../../components/Header/Header'
+import Bandstand from '../../components/Bandstand/Bandstand'
 import './Mysong.styl'
 import vip from '../../assets/icon-user-rank.png'
 import { Grid } from 'antd-mobile'
 import pic1 from '../../assets/images/broadcasting-station-run.jpeg'
 import pic2 from '../../assets/images/broadcasting-station-specific.jpeg'
+import add from '../../assets/icon-songmenu-add.png'
+import PlayList from '../../components/PlayList/PlayList'
 export default class MySong extends Component {
+  
   render () {
     const list = [
       {
@@ -34,7 +38,7 @@ export default class MySong extends Component {
       }
     ]
     return (
-      <div>
+      <div className="container">
         <Header />
         <div className="content">
           <div className="content-top">
@@ -88,8 +92,22 @@ export default class MySong extends Component {
           </div>
         </div>
         <div className="menus">
-            
+            <div className="menusTop">
+              <span>自建歌单</span>
+              <span className="split">|</span>
+              <span>收藏歌单</span>
+              <i className="add"></i>
+              <i className="detail"></i>
+            </div>
+            <div className="menusBottom">
+              <div className="addSongMenu">
+                <img src={add} alt="add"/>
+              </div>
+              <span>新建歌单</span>
+            </div>
         </div>
+        <Bandstand/>
+        <PlayList />
       </div>
     )
   }
