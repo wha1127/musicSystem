@@ -92,6 +92,12 @@ module.exports = function(webpackEnv) {
         options: cssOptions,
       },
       {
+        loader: require.resolve('stylus-loader'),
+        options: {
+          sourceMap:true
+        }
+      },
+      {
         // Options for PostCSS as we reference these options twice
         // Adds vendor prefixing based on your specified browser support in
         // package.json
@@ -508,16 +514,21 @@ module.exports = function(webpackEnv) {
             // This loader doesn't use a "test" so it will catch all modules
             // that fall through the other loaders.
             {
+              test:/\.styl$/,
+              loaders:['style-loader','css-loader','stylus-loader']
+            },
+            {
               loader: require.resolve('file-loader'),
               // Exclude `js` files to keep "css" loader working as it injects
               // its runtime that would otherwise be processed through "file" loader.
               // Also exclude `html` and `json` extensions so they get processed
               // by webpacks internal loaders.
-              exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
+              exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/,/\.styl$/],
               options: {
                 name: 'static/media/[name].[hash:8].[ext]',
               },
             },
+            
             // ** STOP ** Are you adding a new loader?
             // Make sure to add the new loader(s) before the "file" loader.
           ],

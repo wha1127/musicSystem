@@ -1,0 +1,116 @@
+.collect-bottom {
+  width: 100%;
+}
+
+.collect-bottom .collectItem {
+  display: flex;
+  align-items: center;
+}
+
+.collectItem .maskings-left {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, .1);
+  text-align: center;
+  line-height: 60px;
+  margin-right: 6px;
+}
+
+.collectItem .maskings-left img {
+  width: 30px;
+  height: 30px;
+  vertical-align: Middle;
+}
+
+.collectItem .maskings-right {
+
+  flex: 1;
+  height: 60px;
+  line-height: 60px;
+  color: rgba(0, 0, 0, .3);
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.masking-right .masking-right-number {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+/* 我的新建样式 */
+.newSong {
+  width: 100%;
+}
+
+/* 我的新建样式布局上部分 */
+.newSong-top {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #8a8a8a;
+}
+
+.active {
+  color: #000;
+}
+
+.newSong-top .newSong-icon {
+  position: absolute;
+  right: 8px;
+}
+
+.newSong-top .shu {
+  margin: -2px 10px 0 10px;
+}
+
+.newSong-top .newSong-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.newSong-top .newSong-icon :nth-child(1) {
+  margin-right: 10px;
+}
+
+/* 我的新建样式布局下部分 */
+.newSong-bottom {
+  width: 100%;
+}
+
+.newSong-bottom .newSongItem {
+  display: flex;
+  align-items: center;
+}
+
+.newSongItemActive {
+  display: block;
+}
+
+.newSongItem .masking-left {
+
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 60px;
+  margin-right: 6px;
+}
+
+.newSongItem .masking-left img {
+  width: 30px;
+  height: 30px;
+  vertical-align: Middle;
+}
+
+.newSongItem .masking-right {
+  position: relative;
+  flex: 1;
+  height: 60px;
+  line-height: 60px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}

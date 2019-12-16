@@ -1,0 +1,56 @@
+.DrawersBodyTop{
+  padding: 15px;
+  background: #fff;
+  color: black;
+}
+.DrawersBodyTop h4{
+  color: #8a8a8a;
+  padding: 15px 0;
+  font-weight: 400;
+  font-size: 15px;
+}
+.DrawersBodyTop ul li{
+  display: inline-block;
+  border-radius: 40px;
+  border: 1px solid #515151;
+  color: #373737;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 5px;
+}
+.DrawersBodyBottom h4{
+  position: relative;
+  color: #8a8a8a;
+  padding: 15px 0 15px 15px;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #fff;
+}
+.DrawersBodyBottom ul{
+  border-top:1px solid #ccc ;
+}
+.DrawersBodyBottom ul li{
+  position: relative;
+  background: #fff;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 60px;
+  border-bottom:1px solid #ccc ;
+}
+.DrawersBodyBottom ul li img:nth-child(1){
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+}
+.DrawersBodyBottom ul li img:nth-child(3){
+  position: absolute;
+    right: 15px;
+    top: 12px;
+    background-size: cover;
+    width: 21px;
+    height: 21px;
+}
