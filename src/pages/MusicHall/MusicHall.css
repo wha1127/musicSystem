@@ -94,6 +94,7 @@
 } */
 .musicList-container .musicList .music-item .big-img{
   width: 100%;
+  height: 100px;
 }
 .musicList-container .musicList .music-item p{
   font-size: 12px;

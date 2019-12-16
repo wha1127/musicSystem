@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router,HashRouter, Switch, Route ,Redirect} from 'react-router-dom'
 
-import MusicHall from './pages/MusicHall/MusicHall.jsx'
-import Drawer from './components/Drawer/Drawer.jsx'
+
+import routes from './routes'
 
 // import Grabble from './components/Grabble/Grabble.jsx'
 class App extends Component {
   render () {
     return (
-      <div>
-        <Drawer />
-        <MusicHall />
-      </div>
+      <Router>
+
+        <Switch>
+          {
+            routes.map((route, index) => (<Route key={index} {...route} />))
+          }
+        </Switch>
+        <Redirect to='/musicHall'></Redirect>
+      </Router>
     )
   }
 }

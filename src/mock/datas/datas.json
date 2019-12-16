@@ -1,0 +1,90 @@
+{
+  "songList": [
+    {
+      "image": "http://img3.imgtn.bdimg.com/it/u=139670673,2550279246&fm=26&gp=0.jpg",
+      "text": "浮游时光 | 品一杯慢情调的韩系布鲁斯",
+      "amount": "15.7万"
+    },
+    {
+      "image": "http://img4.imgtn.bdimg.com/it/u=1671223440,1615374730&fm=26&gp=0.jpg",
+      "text": "达人周末 | 那些能激起中二病的动漫燃曲",
+      "amount": "65.7万"
+    },
+    {
+      "image": "http://img4.imgtn.bdimg.com/it/u=3862462025,4084711461&fm=26&gp=0.jpg",
+      "text": "99位唱见歌手 ：一人一首代表曲",
+      "amount": "272.2万"
+    },
+    {
+      "image": "http://img4.imgtn.bdimg.com/it/u=24891318,2882117068&fm=26&gp=0.jpg",
+      "text": "独立民谣 | 从大不列颠群岛吹来怡然清风",
+      "amount": "39.5万"
+    },
+    {
+      "image": "http://img0.imgtn.bdimg.com/it/u=4239400416,1923706654&fm=26&gp=0.jpg",
+      "text": "《王者荣耀》风骚走位必备BGM",
+      "amount": "1319.1万"
+    },
+    {
+      "image": "http://img4.imgtn.bdimg.com/it/u=2164364420,1703200550&fm=26&gp=0.jpg",
+      "text": "你一定听过却死活叫不上歌名的灵魂级配乐",
+      "amount": "162.5万"
+    }
+  ],
+  "singerList":[
+    {
+      "avatarImage": "https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1241282637,2141635065&fm=58&s=BA80AD4CC603455D1B20358A03007091",
+      "name": "肖战",
+      "amount": "208.2万能量值",
+      "number": "1"
+    },
+    {
+      "avatarImage": "http://img2.imgtn.bdimg.com/it/u=3132753256,2928231488&fm=26&gp=0.jpg",
+      "name": "薛之谦",
+      "amount": "120万能量值",
+      "number": "2"
+    },
+    {
+      "avatarImage": "http://img1.imgtn.bdimg.com/it/u=1351430341,2613012684&fm=26&gp=0.jpg",
+      "name": "周杰伦",
+      "amount": "96.4万能量值",
+      "number": "3"
+    },
+    {
+      "avatarImage": "http://img4.imgtn.bdimg.com/it/u=3197268210,1828676834&fm=26&gp=0.jpg",
+      "name": "蔡徐坤",
+      "amount": "88.6万能量值",
+      "number": "4"
+    },
+    {
+      "avatarImage": "http://img3.imgtn.bdimg.com/it/u=3218563136,1514289017&fm=26&gp=0.jpg",
+      "name": "吴亦凡",
+      "amount": "82.8万能量值",
+      "number": "5"
+    },
+    {
+      "avatarImage": "http://img3.imgtn.bdimg.com/it/u=3972125259,1784174404&fm=15&gp=0.jpg",
+      "name": "李连杰",
+      "amount": "79.3万能量值",
+      "number": "6"
+    },
+    {
+      "avatarImage": "http://img2.imgtn.bdimg.com/it/u=747342672,1937352680&fm=15&gp=0.jpg",
+      "name": "周润发",
+      "amount": "75.3万能量值",
+      "number": "7"
+    },
+    {
+      "avatarImage": "http://img2.imgtn.bdimg.com/it/u=4164904876,1805347490&fm=26&gp=0.jpg",
+      "name": "周杰",
+      "amount": "66.6万能量值",
+      "number": "8"
+    },
+    {
+      "avatarImage": "http://img1.imgtn.bdimg.com/it/u=1429890478,3067509205&fm=15&gp=0.jpg",
+      "name": "陶谦",
+      "amount": "62.4万能量值",
+      "number": "9"
+    }
+  ]
+}

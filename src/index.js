@@ -8,5 +8,8 @@ import App from './App.jsx'
 //引入重置的样式文件
 import './static/css/reset.css'
 
+//
+import './mock/mock-server.js'
+
 //渲染组件
 ReactDOM.render(<App />, document.getElementById('root'))
