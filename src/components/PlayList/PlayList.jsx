@@ -16,10 +16,11 @@ class PlayList extends Component {
     })
   }
   componentDidMount () {
-    this.pubsub_token = Pubsub.subscribe('showList', (isShow) => {
+    this.pubsub_token = Pubsub.subscribe('showList', (msg,isShow) => {
       this.setState({
         isShow
       })
+      console.log(this.state.isShow);
     })
   }
   componentWillUnmount () {
@@ -27,7 +28,7 @@ class PlayList extends Component {
   }
   render () {
     {
-      return ((
+      return (
         <div className={this.state.isShow?'playListContainer show':'playListContainer'} onClick={this.showPlayList}>
           <div  className={this.state.isShow?'musicList show':'musicList'}>
             <div className="listTop">
@@ -50,7 +51,7 @@ class PlayList extends Component {
           </div>
           <div className="bottom" onClick={this.showPlayList}>关闭</div>
         </div>
-      ))
+      )
     }
   }
 }

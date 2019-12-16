@@ -19,12 +19,16 @@ export default class Bandstand extends Component {
   showPlayList(){
     Pubsub.publish('showList',true)
   }
+  showPlayDetail(){
+    console.log(111);
+    Pubsub.publish('showDetail',true)
+  }
   render() {
     return (
       <div className="container">
         <div className="footer">
           <div className="left">
-            <img src={avatar} alt="avatar" className={this.state.isPlay?'play' : ''}/>
+            <img src={avatar} onClick={this.showPlayDetail}  alt="avatar" className={this.state.isPlay?'play' : ''}/>
           </div>
           <div className="center">
             <p className="title">泡沫</p>

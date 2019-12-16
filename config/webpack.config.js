@@ -26,7 +26,8 @@ const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpack
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 
 const postcssNormalize = require('postcss-normalize');
-
+const px2rem = require('postcss-px2rem-exclude')
+px2rem({remUnit:75,exclude:/node_modules/i})
 const appPackageJson = require(paths.appPackageJson);
 
 // Source maps are resource heavy and can cause out of memory issue for large source files.
@@ -110,7 +111,12 @@ module.exports = function(webpackEnv) {
             // Adds PostCSS Normalize as the reset css with default options,
             // so that it honors browserslist config in package.json
             // which in turn let's users customize the target behavior as per their needs.
-            postcssNormalize(),
+            // postcssNormalize(),
+            require('postcss-pxtorem')({
+              rootValue: 100,
+              propWhiteList: [],
+              minPixelValue:2,
+            })
           ],
           sourceMap: isEnvProduction && shouldUseSourceMap,
         },

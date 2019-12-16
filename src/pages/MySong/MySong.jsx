@@ -8,6 +8,7 @@ import pic1 from '../../assets/images/broadcasting-station-run.jpeg'
 import pic2 from '../../assets/images/broadcasting-station-specific.jpeg'
 import add from '../../assets/icon-songmenu-add.png'
 import PlayList from '../../components/PlayList/PlayList'
+import PlayDetail from '../../components/PlayDetail/PlayDetail'
 export default class MySong extends Component {
   
   render () {
@@ -108,6 +109,7 @@ export default class MySong extends Component {
         </div>
         <Bandstand/>
         <PlayList />
+        <PlayDetail/>
       </div>
     )
   }

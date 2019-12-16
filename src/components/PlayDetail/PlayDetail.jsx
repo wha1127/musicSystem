@@ -7,21 +7,41 @@ import next from '../../assets/icon-music-next.png'
 import prev from '../../assets/icon-music-prev.png'
 import play from '../../assets/icon-music-play.png'
 import stop from '../../assets/icon-music-pause.png'
+import Pubsub from 'pubsub-js'
 class PlayDetail extends Component {
   state = {
-    isPlay: false
+    isPlay: false,
+    isShow: false
   }
   changeStatus = () => {
-  const isPlay = !this.state.isPlay
-  this.setState({
-    isPlay
-  })
+    const isPlay = !this.state.isPlay
+    this.setState({
+      isPlay
+    })
+  }
+  hideDetail = () => {
+    const isShow = !this.state.isShow
+    console.log(111);
+    this.setState({
+      isShow
+    })
+  }
+  componentDidMount(){
+    console.log(222);
+    this.pubsub_token = Pubsub.subscribe('showDetail',(msg,isShow) => {
+      this.setState({
+        isShow
+      })
+    })
+  }
+  componentWillUnmount () {
+    Pubsub.unsubscribe(this.pubsub_token)
   }
   render () {
-    return (
-      <div className="detailContainer">
+    return this.state.isShow ? (
+      <div className={this.state.isShow ? "detailContainer show" : "detailContaine"}>
         <div className="detailTop">
-          <img className="back" src={back} alt="" />
+          <img className="back" onClick={this.hideDetail} src={back} alt="" />
           <p className="music-title">泡沫</p>
           <p className="music-author">邓紫棋</p>
         </div>
@@ -30,7 +50,7 @@ class PlayDetail extends Component {
             {
               [(
                 <div key="1" className="carousel-one">
-                  <img className={this.state.isPlay?"music-cover active" : "music-cover"}  src={singer} alt="singer" />
+                  <img className={this.state.isPlay ? "music-cover active" : "music-cover"} src={singer} alt="singer" />
                 </div>
               ),
               (
@@ -46,22 +66,23 @@ class PlayDetail extends Component {
         <div className="detailBottom">
           <div className="progress">
             <span className="currentPlayTime">0:00</span>
-            <div  className="progress-wrapper">
+            <div className="progress-wrapper">
               <div className="progress-inner" ></div>
               <span className="progress-btn" ></span>
             </div>
             <span className="totalPlayTime">04:19</span>
           </div>
-          <div className="controlBtn">
-            <img className="prev" src={prev}/>
-            <img className="status" src={this.state.isPlay ? stop : play} onClick={this.changeStatus} />
-            <img className="next" src={next}  />
-          </div>
+          
         </div>
+        <div className="controlBtn">
+            <img className="prev" src={prev} />
+            <img className="status" src={this.state.isPlay ? stop : play} onClick={this.changeStatus} />
+            <img className="next" src={next} />
+          </div>
         <div className="detailBg"></div>
         <div className="bgMask"></div>
       </div>
-    );
+    ): null
   }
 }
 
