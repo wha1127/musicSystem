@@ -1,7 +1,7 @@
 const rewireStyl = require("react-app-rewire-stylus-modules");
-const { override, fixBabelImports, addDecoratorsLegacy } = require('customize-cra');
+const { override, fixBabelImports, addDecoratorsLegacy,addLessLoader } = require('customize-cra');
 
-// module.exports = function override(config, env) {
+// module.exports = function override(config, env,) {
   
 //   config = rewireStyl(config, env);
   
@@ -12,18 +12,21 @@ const { override, fixBabelImports, addDecoratorsLegacy } = require('customize-cr
 //   //       "@primary-color": "#1890ff",
 //   //     },
 //   //   })(config, env);
-//   fixBabelImports('import', {
-//      libraryName: 'antd-mobile',
-//      style: 'css',
-//    })
-//    addDecoratorsLegacy()
-//   return config;
+//   // fixBabelImports('import', {
+//   //    libraryName: 'antd-mobile',
+//   //    style: 'css',
+//   //  })
+//   //  addDecoratorsLegacy()
+//    return config;
 // };
 
 module.exports = override(
   fixBabelImports('import', {
     libraryName: 'antd-mobile',
-    style: 'css',
+    style: true,
   }),
+   addLessLoader({
+   javascriptEnabled: true,
+ }),
   addDecoratorsLegacy()
 );

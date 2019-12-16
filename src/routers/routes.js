@@ -6,6 +6,7 @@ import MyPage from '../pages/MyPage/MyPage.jsx'
 //引入 组件
 import ManageSong from '../components/ManageSong/ManageSong.jsx'
 import DrawerBody from "../pages/Grabble/DrawerBody/DrawerBody.jsx"
+import NewSong from '../components/NewSong/NewSong'
 export default [
   {
     path: '/drawer',
@@ -37,5 +38,8 @@ export default [
     path: '/drawerbody',
     component: DrawerBody
   },
-  
+  {
+    path:'/newsong',
+    component:NewSong
+  }
 ]

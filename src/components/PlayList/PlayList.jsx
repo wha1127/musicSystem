@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import bin from '../../assets/icon-list-clear.png'
 import playing from '../../assets/icon-music-playing.png'
-import './style.styl'
+// import './style.styl'
+import './style.less'
 import close from '../../assets/icon-record-close.png'
 import Pubsub from 'pubsub-js'
 class PlayList extends Component {

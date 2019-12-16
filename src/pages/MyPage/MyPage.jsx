@@ -4,7 +4,6 @@ import React, { Component } from 'react'
 import Collect from '../Collect/Collect.jsx'
 //引入电台组件
 import Broadcasting from '../../components/Broadcasting/Broadcasting.jsx'
-
 //引入头部组件
 import MyTop from '../../components/MyTop/MyTop.jsx'
 
@@ -22,7 +21,9 @@ class MyPage extends Component {
           <Broadcasting />
 
           {/* 我的新建布局 */}
-          <Collect />
+          
+            <Collect/>
+          
         </div>
       </div>
     )

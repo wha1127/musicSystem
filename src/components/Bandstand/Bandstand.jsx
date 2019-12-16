@@ -4,7 +4,8 @@ import pause from '../../assets/icon-control-pause.png'
 import play from '../../assets/icon-control-play.png'
 import menu from '../../assets/icon-control-play.png'
 import list from '../../assets/icon-play-list.png'
-import './style.styl'
+// import './style.styl'
+import './style.less'
 import Pubsub from 'pubsub-js'
 export default class Bandstand extends Component {
   state = {

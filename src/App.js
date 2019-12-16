@@ -6,6 +6,8 @@ import routes from "./routers/routes"
 import Drawer from "./pages/Drawer/Drawer.jsx"
 import Bandstand from './components/Bandstand/Bandstand'
 import PlayDetail from './components/PlayDetail/PlayDetail'
+// import PlayList from './compoents/PlayList/PlayList.jsx'
+import PlayList from "./components/PlayList/PlayList"
 export default class App extends React.Component {
 
   render () {
@@ -14,6 +16,7 @@ export default class App extends React.Component {
         <Drawer />
         <Redirect to="/musicHall"></Redirect>
         <Bandstand/>
+        <PlayList/>
         <PlayDetail/>
       </Router>
     )

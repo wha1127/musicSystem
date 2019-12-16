@@ -25,6 +25,7 @@ class Collect extends Component {
         songList: data
       })
     }) */
+    console.log(111)
     let songList1 = localStorage.getItem('addValue')
     if (songList1) {
       songList2.push(songList1)

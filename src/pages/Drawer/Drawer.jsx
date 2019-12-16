@@ -8,6 +8,9 @@ export default class Drawers extends React.Component {
   state = {
     open: false,
   }
+  componentDidMount(){
+    console.log(this)
+  }
   onOpenChange = (...args) => {
     console.log(args);
     this.setState({ open: !this.state.open });

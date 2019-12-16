@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import back from '../../assets/icon-control-down.png'
 import singer from '../../assets/images/topic-tianfuzhen.jpeg'
-import './style.styl'
+// import './style.styl'
+import './style.less'
 import { Carousel } from 'antd-mobile'
 import next from '../../assets/icon-music-next.png'
 import prev from '../../assets/icon-music-prev.png'
