@@ -88,24 +88,24 @@ class MusicHall extends Component {
               <img src="/assets/icon-grid-singer.png" alt="" />
               <span>歌手</span>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={() => this.goDetail()}>
               <img src="/assets/icon-grid-rank.png" alt="" />
               <span>排行</span>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={() => this.goDetail()}>
               <img src="/assets/icon-grid-radio.png" alt="" />
               <span>电台</span>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={() => this.goDetail()}>
               <img src="/assets/icon-grid-categories.png"
                 alt="" />
               <span>分类歌单</span>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={() => this.goDetail()}>
               <img src="/assets/icon-grid-video.png" alt="" />
               <span>视频MV</span>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={() => this.goDetail()}>
               <img src="/assets/icon-grid-buy.png" alt="" />
               <span>数字专辑</span>
             </li>

@@ -9,13 +9,13 @@ class Singers extends Component {
   }
   async componentDidMount () {
     const result = await reqSingerList()
-    console.log(result)
+    // console.log(result)
     if (result.data.code === 0) {
       const singerList = result.data.data
       this.setState({
         singerList
       })
-      console.log(singerList)
+      // console.log(singerList)
     } else {
       console.log('搞错了')
     }
