@@ -1,15 +1,17 @@
 // 引入React
 import React from 'react'
 import './Grabble.css'
+import PubSub from 'pubsub-js'
 import { InputItem, Icon } from 'antd-mobile';
 import DrawerBody from "./DrawerBody/DrawerBody.jsx"
-import { Switch, Route } from "react-router-dom"
+import { Switch, Route, Redirect } from "react-router-dom"
 import Discovery from "../Discovery/index.jsx"
 import MusicHall from "../MusicHall/MusicHall.jsx"
+import MyPage from "../MyPage/MyPage.jsx"
 export default class Grabble extends React.Component {
   state = {
     isHeadMasking: true,
-    inputValue: ""
+    inputValue: ''
   }
   goMasking = () => {
     const headMasking = document.getElementById("headMasking")
@@ -34,6 +36,9 @@ export default class Grabble extends React.Component {
       inputValue
     })
   }
+  Search = () => {
+    PubSub.publish('addSearch', this.state.inputValue)
+  }
   render () {
     const { inputValue } = this.state
     return (
@@ -50,7 +55,7 @@ export default class Grabble extends React.Component {
         
         */}
         <Switch>
-          {/* <Route path="" component={}></Route> */}
+          <Route path="/mypage" component={MyPage}></Route>
           <Route path="/musicHall" component={MusicHall}></Route>
           <Route path="/discovery" component={Discovery}></Route>
         </Switch>
@@ -65,7 +70,7 @@ export default class Grabble extends React.Component {
                   value={inputValue}
                 ></InputItem>
               </div>
-              <span>搜索</span>
+              <span onClick={this.Search}>搜索</span>
             </div>
           </div>
           <DrawerBody saveValue={this.saveValue} />

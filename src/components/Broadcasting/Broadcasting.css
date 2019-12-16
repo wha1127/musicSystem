@@ -1,0 +1,56 @@
+.myBottom-broadcasting:before {
+  width: 100%;
+  display: block;
+  content: '';
+  height: 4px;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.myBottom-broadcasting:after {
+  width: 100%;
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.myBottom-individuality {
+  display: flex;
+
+}
+
+.myBottom-individuality img {
+  width: 55px;
+  height: 55px;
+  margin-right: 6px;
+}
+
+.myBottom-size {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.myBottom-box:after {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  content: '';
+  display: block;
+  background-color: #8a8a8a;
+  height: 1px;
+}
+
+.myBottom-size :nth-child(1) {
+  font-size: 18px;
+  line-height: 1.2;
+
+}
+
+.myBottom-size :nth-child(2) {
+  font-size: 13px;
+  color: #8a8a8a;
+  line-height: 1.2;
+}

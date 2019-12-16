@@ -1,0 +1,95 @@
+/* 我的页面上部分样式start */
+.myTop {
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* 头像部分样式 */
+.myTop-portrait {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.myTop-portrait .myTop-portrait-btn {
+  width: 82px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #8a8a8a;
+  border-radius: 30px;
+}
+
+.myTop-portrait .myTop-portrait-btn img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.myTop-portrait .myTop-portrait-btn span {
+  font-size: 10px
+}
+
+.myTop-portrait .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 10px 20px;
+}
+
+.coconut {
+  font-size: 12px;
+  justify-content: center;
+  display: flex;
+}
+
+.coconut:before {
+  content: '';
+  display: block;
+  width: 50px;
+  border-top: 1px solid #8a8a8a;
+  margin: 6px 5px 0 0;
+}
+
+.coconut:after {
+  content: '';
+  display: block;
+  width: 50px;
+  border-top: 1px solid #8a8a8a;
+  margin: 6px 0 0 5px;
+}
+
+.diamond {
+  text-align: center;
+  margin: 5px 0 10px;
+}
+
+.diamond img {
+  width: 19px;
+  height: 19px;
+}
+
+/* 列表 */
+.IconList {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.IconList .IConItem {
+  width: 33%;
+  text-align: center;
+}
+
+.IconList .IConItem img {
+  width: 35px;
+  height: 35px;
+}
+
+.IconList .IConItem p {
+  color: rgba(0, 0, 0, .4);
+  margin: 4px 0;
+}
